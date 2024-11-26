@@ -13,3 +13,19 @@ public:
         return -1;
     }
 };
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+class Solution {
+public:
+    int strStr(string h, string n) {
+        auto it = search(h.begin(), h.end(), n.begin(), n.end());
+        if(it != h.end())
+        {
+            return distance(h.begin(),it);
+        }
+        else return -1;
+    }
+};
